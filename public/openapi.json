@@ -1,0 +1,519 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Farmart API",
+    "description": "API surface implied by the Farmart grocery prototype (homepage, product detail page, cart, and membership signup) as described in DESIGN.md and PLAN.md. This is a spec design exercise — no backend/database exists yet in this repo; only /api/hello is actually implemented.",
+    "version": "0.1.0"
+  },
+  "servers": [
+    { "url": "/api", "description": "Local Next.js route handlers" }
+  ],
+  "tags": [
+    { "name": "Meta", "description": "Service health / sanity checks" },
+    { "name": "Categories", "description": "Category navigation used on the homepage and breadcrumbs" },
+    { "name": "Banners", "description": "Homepage hero banners and featured brand promos" },
+    { "name": "Products", "description": "Product listing, search, and detail" },
+    { "name": "Reviews", "description": "Customer reviews on a product" },
+    { "name": "Cart", "description": "Shopping cart management" },
+    { "name": "Membership", "description": "Member signup and the new-member discount" }
+  ],
+  "paths": {
+    "/hello": {
+      "get": {
+        "tags": ["Meta"],
+        "summary": "Health check / hello world",
+        "operationId": "getHello",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": { "message": { "type": "string", "example": "Hello, world!" } },
+                  "required": ["message"]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/categories": {
+      "get": {
+        "tags": ["Categories"],
+        "summary": "List browse-by categories",
+        "description": "Backs the \"Browse by Category\" grid on the homepage.",
+        "operationId": "listCategories",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/Category" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/banners": {
+      "get": {
+        "tags": ["Banners"],
+        "summary": "List homepage hero banners",
+        "operationId": "listBanners",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": { "type": "array", "items": { "$ref": "#/components/schemas/Banner" } }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/brands": {
+      "get": {
+        "tags": ["Banners"],
+        "summary": "List featured brand promo tiles",
+        "operationId": "listFeaturedBrands",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": { "type": "array", "items": { "$ref": "#/components/schemas/BrandPromo" } }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/products": {
+      "get": {
+        "tags": ["Products"],
+        "summary": "List / search products",
+        "description": "Powers Top Saver Today, Best Seller, Just Landing, and Related Products sections via `section`, plus category listing pages via `category` and free-text `search`.",
+        "operationId": "listProducts",
+        "parameters": [
+          {
+            "name": "section",
+            "in": "query",
+            "description": "Homepage merchandising zone to pull from.",
+            "schema": {
+              "type": "string",
+              "enum": ["top-saver", "best-seller", "just-landing", "related"]
+            }
+          },
+          {
+            "name": "category",
+            "in": "query",
+            "description": "Category slug to filter by (see GET /categories).",
+            "schema": { "type": "string" }
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "description": "Free-text keyword search on product name.",
+            "schema": { "type": "string" }
+          },
+          {
+            "name": "relatedTo",
+            "in": "query",
+            "description": "Product id to fetch \"You May Also Like\" results for.",
+            "schema": { "type": "string" }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": { "type": "integer", "minimum": 1, "default": 1 }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": { "type": "integer", "minimum": 1, "maximum": 100, "default": 20 }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "items": { "type": "array", "items": { "$ref": "#/components/schemas/Product" } },
+                    "page": { "type": "integer" },
+                    "pageSize": { "type": "integer" },
+                    "total": { "type": "integer" }
+                  },
+                  "required": ["items", "page", "pageSize", "total"]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/products/{productId}": {
+      "get": {
+        "tags": ["Products"],
+        "summary": "Get product detail",
+        "description": "Backs the Product Detail Page hero, description, and nutrition facts tab.",
+        "operationId": "getProduct",
+        "parameters": [{ "$ref": "#/components/parameters/ProductId" }],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": { "schema": { "$ref": "#/components/schemas/ProductDetail" } }
+            }
+          },
+          "404": { "$ref": "#/components/responses/NotFound" }
+        }
+      }
+    },
+    "/products/{productId}/reviews": {
+      "get": {
+        "tags": ["Reviews"],
+        "summary": "List reviews for a product",
+        "operationId": "listProductReviews",
+        "parameters": [
+          { "$ref": "#/components/parameters/ProductId" },
+          { "name": "page", "in": "query", "schema": { "type": "integer", "minimum": 1, "default": 1 } },
+          { "name": "pageSize", "in": "query", "schema": { "type": "integer", "minimum": 1, "maximum": 100, "default": 20 } }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "items": { "type": "array", "items": { "$ref": "#/components/schemas/Review" } },
+                    "page": { "type": "integer" },
+                    "pageSize": { "type": "integer" },
+                    "total": { "type": "integer" }
+                  },
+                  "required": ["items", "page", "pageSize", "total"]
+                }
+              }
+            }
+          },
+          "404": { "$ref": "#/components/responses/NotFound" }
+        }
+      },
+      "post": {
+        "tags": ["Reviews"],
+        "summary": "Submit a review for a product",
+        "operationId": "createProductReview",
+        "parameters": [{ "$ref": "#/components/parameters/ProductId" }],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": { "schema": { "$ref": "#/components/schemas/NewReview" } }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Review" } } }
+          },
+          "400": { "$ref": "#/components/responses/BadRequest" },
+          "404": { "$ref": "#/components/responses/NotFound" }
+        }
+      }
+    },
+    "/cart": {
+      "get": {
+        "tags": ["Cart"],
+        "summary": "Get the current cart",
+        "description": "Cart is keyed by session (guest) or member id, resolved server-side from cookies/auth — no id is passed by the client.",
+        "operationId": "getCart",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Cart" } } }
+          }
+        }
+      }
+    },
+    "/cart/items": {
+      "post": {
+        "tags": ["Cart"],
+        "summary": "Add a product to the cart",
+        "description": "Used by \"Add To Cart\" on product cards and the product detail page.",
+        "operationId": "addCartItem",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "productId": { "type": "string" },
+                  "quantity": { "type": "integer", "minimum": 1, "default": 1 }
+                },
+                "required": ["productId"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Updated cart",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Cart" } } }
+          },
+          "400": { "$ref": "#/components/responses/BadRequest" },
+          "404": { "$ref": "#/components/responses/NotFound" }
+        }
+      }
+    },
+    "/cart/items/{itemId}": {
+      "patch": {
+        "tags": ["Cart"],
+        "summary": "Update quantity of a cart line item",
+        "description": "Used by the QuantityStepper on cart-aware product cards.",
+        "operationId": "updateCartItem",
+        "parameters": [{ "$ref": "#/components/parameters/CartItemId" }],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": { "quantity": { "type": "integer", "minimum": 1 } },
+                "required": ["quantity"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Updated cart",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Cart" } } }
+          },
+          "404": { "$ref": "#/components/responses/NotFound" }
+        }
+      },
+      "delete": {
+        "tags": ["Cart"],
+        "summary": "Remove a line item from the cart",
+        "operationId": "removeCartItem",
+        "parameters": [{ "$ref": "#/components/parameters/CartItemId" }],
+        "responses": {
+          "200": {
+            "description": "Updated cart",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Cart" } } }
+          },
+          "404": { "$ref": "#/components/responses/NotFound" }
+        }
+      }
+    },
+    "/members/signup": {
+      "post": {
+        "tags": ["Membership"],
+        "summary": "Sign up for membership",
+        "description": "Backs the SignupPanel CTA. New members receive a first-order discount coupon per PLAN.md Phase 3.",
+        "operationId": "signupMember",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": { "schema": { "$ref": "#/components/schemas/SignupRequest" } }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/SignupResponse" } } }
+          },
+          "400": { "$ref": "#/components/responses/BadRequest" },
+          "409": {
+            "description": "Email already registered",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "parameters": {
+      "ProductId": {
+        "name": "productId",
+        "in": "path",
+        "required": true,
+        "schema": { "type": "string" }
+      },
+      "CartItemId": {
+        "name": "itemId",
+        "in": "path",
+        "required": true,
+        "schema": { "type": "string" }
+      }
+    },
+    "responses": {
+      "NotFound": {
+        "description": "Not found",
+        "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+      },
+      "BadRequest": {
+        "description": "Invalid request",
+        "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+      }
+    },
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": { "type": "string" },
+          "message": { "type": "string" }
+        },
+        "required": ["error", "message"]
+      },
+      "Category": {
+        "type": "object",
+        "properties": {
+          "slug": { "type": "string", "example": "breads-sweets" },
+          "label": { "type": "string", "example": "Breads & Sweets" },
+          "emoji": { "type": "string", "example": "🥖" },
+          "active": { "type": "boolean", "description": "Currently highlighted in the category bar." }
+        },
+        "required": ["slug", "label", "emoji"]
+      },
+      "Banner": {
+        "type": "object",
+        "properties": {
+          "variant": { "type": "string", "enum": ["cool", "warm"] },
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "href": { "type": "string" }
+        },
+        "required": ["variant", "title"]
+      },
+      "BrandPromo": {
+        "type": "object",
+        "properties": {
+          "tag": { "type": "string", "example": "Foodhouse" },
+          "title": { "type": "string", "example": "New Snacks Release" },
+          "emoji": { "type": "string" },
+          "href": { "type": "string" }
+        },
+        "required": ["tag", "title"]
+      },
+      "Money": {
+        "type": "string",
+        "description": "Formatted price string as shown in the UI (e.g. \"$49.90\").",
+        "example": "$49.90"
+      },
+      "Product": {
+        "type": "object",
+        "description": "Shape consumed by ProductCard.",
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "brand": { "type": "string" },
+          "emoji": { "type": "string", "description": "Placeholder art used in this prototype in place of a product photo." },
+          "category": { "type": "string", "description": "Category slug (see GET /categories).", "example": "wines-alcohol-drinks" },
+          "rating": { "type": "number", "minimum": 0, "maximum": 5 },
+          "reviewCount": { "type": "integer" },
+          "price": { "$ref": "#/components/schemas/Money" },
+          "oldPrice": { "$ref": "#/components/schemas/Money" },
+          "salePercent": { "type": "integer", "description": "e.g. 20 for a \"SALE 20%\" badge." },
+          "stock": { "type": "string", "enum": ["in_stock", "low_stock", "out_of_stock"] },
+          "soldCount": { "type": "integer", "description": "Used for Sale: 20/50 style progress text and Best Seller ranking." },
+          "stockLimit": { "type": "integer" }
+        },
+        "required": ["id", "name", "price"]
+      },
+      "ProductDetail": {
+        "allOf": [
+          { "$ref": "#/components/schemas/Product" },
+          {
+            "type": "object",
+            "properties": {
+              "images": { "type": "array", "items": { "type": "string" }, "description": "Gallery images (emoji placeholders in this prototype)." },
+              "description": { "type": "string" },
+              "highlights": { "type": "array", "items": { "type": "string" } },
+              "nutrition": {
+                "type": "object",
+                "additionalProperties": { "type": "string" },
+                "example": { "Serving size": "500ml", "Calories": "215 kcal" }
+              },
+              "shippingNote": { "type": "string" }
+            }
+          }
+        ]
+      },
+      "Review": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "author": { "type": "string", "example": "Nattapong S." },
+          "rating": { "type": "number", "minimum": 0, "maximum": 5 },
+          "comment": { "type": "string" },
+          "createdAt": { "type": "string", "format": "date-time" }
+        },
+        "required": ["id", "author", "rating", "comment"]
+      },
+      "NewReview": {
+        "type": "object",
+        "properties": {
+          "author": { "type": "string" },
+          "rating": { "type": "number", "minimum": 0, "maximum": 5 },
+          "comment": { "type": "string" }
+        },
+        "required": ["rating", "comment"]
+      },
+      "CartItem": {
+        "type": "object",
+        "properties": {
+          "itemId": { "type": "string" },
+          "product": { "$ref": "#/components/schemas/Product" },
+          "quantity": { "type": "integer", "minimum": 1 },
+          "lineTotal": { "$ref": "#/components/schemas/Money" }
+        },
+        "required": ["itemId", "product", "quantity", "lineTotal"]
+      },
+      "Cart": {
+        "type": "object",
+        "properties": {
+          "items": { "type": "array", "items": { "$ref": "#/components/schemas/CartItem" } },
+          "subtotal": { "$ref": "#/components/schemas/Money" },
+          "discount": { "$ref": "#/components/schemas/Money" },
+          "total": { "$ref": "#/components/schemas/Money" }
+        },
+        "required": ["items", "subtotal", "total"]
+      },
+      "SignupRequest": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "email": { "type": "string", "format": "email" },
+          "password": { "type": "string", "format": "password", "minLength": 8 }
+        },
+        "required": ["name", "email", "password"]
+      },
+      "SignupResponse": {
+        "type": "object",
+        "properties": {
+          "memberId": { "type": "string" },
+          "email": { "type": "string", "format": "email" },
+          "welcomeCoupon": {
+            "type": "object",
+            "properties": {
+              "code": { "type": "string", "example": "WELCOME15" },
+              "percentOff": { "type": "integer", "example": 15 }
+            }
+          }
+        },
+        "required": ["memberId", "email"]
+      }
+    }
+  }
+}

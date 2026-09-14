@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Farmart Test Report</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #fafafa;
+    color: #28374b;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 14px;
+  }
+  header {
+    border-bottom: 1px solid #eeeeee;
+    background: #fff;
+    padding: 20px 24px;
+  }
+  header h1 { margin: 0 0 4px; font-size: 18px; }
+  header p { margin: 0; font-size: 12px; color: #8a8f98; }
+  main { max-width: 1000px; margin: 0 auto; padding: 24px; }
+
+  .summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  .summary .stat {
+    background: #fff;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .summary .stat .value { font-size: 22px; font-weight: 700; }
+  .summary .stat .label { font-size: 11px; color: #8a8f98; text-transform: uppercase; letter-spacing: 0.04em; }
+  .summary .stat.pass .value { color: #2e9e5b; }
+  .summary .stat.fail .value { color: #e74c3c; }
+  .overall {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .overall.ok { background: #e7f7ee; color: #2e9e5b; }
+  .overall.bad { background: #fdecea; color: #e74c3c; }
+
+  section { margin-bottom: 28px; }
+  section h2 {
+    font-size: 14px;
+    margin: 0 0 10px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .suite-count { font-size: 11px; color: #8a8f98; font-weight: 400; }
+
+  .file-card {
+    background: #fff;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .file-card summary {
+    cursor: pointer;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+  }
+  .file-card summary::-webkit-details-marker { display: none; }
+  .file-card summary code { font-size: 12px; }
+  .file-card summary .count { margin-left: auto; font-size: 11px; color: #8a8f98; }
+
+  .badge {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 3px;
+  }
+  .badge-ok { background: #e7f7ee; color: #2e9e5b; }
+  .badge-fail { background: #fdecea; color: #e74c3c; }
+
+  table { width: 100%; border-collapse: collapse; border-top: 1px solid #f2f2f2; }
+  tr.ok td:first-child, tr.fail td:first-child { width: 24px; text-align: center; }
+  td { padding: 6px 14px; font-size: 12px; border-bottom: 1px solid #f7f7f7; }
+  td.dur { text-align: right; color: #8a8f98; white-space: nowrap; }
+  tr.fail-detail pre {
+    margin: 0 0 8px;
+    padding: 8px 10px;
+    background: #fdecea;
+    color: #b3261e;
+    border-radius: 4px;
+    font-size: 11px;
+    white-space: pre-wrap;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>🧪 Farmart — Test Report</h1>
+  <p>Generated 2026-09-14T07:12:31.936Z · vitest (server + storybook projects)</p>
+</header>
+<main>
+  <span class="overall ok">ALL TESTS PASSED</span>
+
+  <div class="summary">
+    <div class="stat"><div class="value">21</div><div class="label">Test files</div></div>
+    <div class="stat pass"><div class="value">21</div><div class="label">Files passed</div></div>
+    <div class="stat"><div class="value">57</div><div class="label">Tests</div></div>
+    <div class="stat pass"><div class="value">57</div><div class="label">Passed</div></div>
+    <div class="stat fail"><div class="value">0</div><div class="label">Failed</div></div>
+  </div>
+
+  
+  <section>
+    <h2>Storybook (components) <span class="suite-count">14/14 files passed</span></h2>
+    
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>components/farmart/Badge.stories.tsx</code>
+      <span class="count">3 tests</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>Sale</td>
+        <td class="dur">813 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>Coupon</td>
+        <td class="dur">36 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>Cart Count</td>
+        <td class="dur">24 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>components/farmart/Banner.stories.tsx</code>
+      <span class="count">2 tests</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>Cool</td>
+        <td class="dur">844 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>Warm</td>
+        <td class="dur">24 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>components/farmart/Breadcrumb.stories.tsx</code>
+      <span class="count">1 test</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>Default</td>
+        <td class="dur">489 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>components/farmart/Button.stories.tsx</code>
+      <span class="count">4 tests</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>Primary</td>
+        <td class="dur">801 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>Secondary</td>
+        <td class="dur">22 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>Register</td>
+        <td class="dur">15 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>Full Width</td>
+        <td class="dur">22 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>components/farmart/CategoryTile.stories.tsx</code>
+      <span class="count">2 tests</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>Default</td>
+        <td class="dur">824 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>Active</td>
+        <td class="dur">30 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>components/farmart/Dialog.stories.tsx</code>
+      <span class="count">2 tests</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>Open</td>
+        <td class="dur">810 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>Closed</td>
+        <td class="dur">28 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>components/farmart/ImageGallery.stories.tsx</code>
+      <span class="count">2 tests</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>Default</td>
+        <td class="dur">429 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>Single Image</td>
+        <td class="dur">17 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>components/farmart/ProductCard.stories.tsx</code>
+      <span class="count">3 tests</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>On Sale With Qty</td>
+        <td class="dur">848 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>With Old Price</td>
+        <td class="dur">20 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>Thumbnail Only</td>
+        <td class="dur">10 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>components/farmart/ProductTabs.stories.tsx</code>
+      <span class="count">1 test</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>Default</td>
+        <td class="dur">673 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>components/farmart/QuantityStepper.stories.tsx</code>
+      <span class="count">2 tests</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>Default</td>
+        <td class="dur">57 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>Starting At Five</td>
+        <td class="dur">25 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>components/farmart/Rating.stories.tsx</code>
+      <span class="count">2 tests</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>Small</td>
+        <td class="dur">55 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>With Review Count</td>
+        <td class="dur">30 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>components/farmart/SignupPanel.stories.tsx</code>
+      <span class="count">1 test</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>Default</td>
+        <td class="dur">69 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>components/farmart/SiteHeader.stories.tsx</code>
+      <span class="count">1 test</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>Default</td>
+        <td class="dur">102 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>components/farmart/Tabs.stories.tsx</code>
+      <span class="count">1 test</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>Default</td>
+        <td class="dur">76 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+  </section>
+
+  <section>
+    <h2>Backend (unit + integration) <span class="suite-count">7/7 files passed</span></h2>
+    
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>lib/farmart-data.test.ts</code>
+      <span class="count">14 tests</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>getCategories &gt; returns all seeded categories in display order</td>
+        <td class="dur">3 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>getCategories &gt; marks exactly one category active</td>
+        <td class="dur">0 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>getBanners &gt; returns the seeded hero banners in order</td>
+        <td class="dur">0 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>getBrands &gt; returns the seeded brand promo tiles in order</td>
+        <td class="dur">0 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>getProducts &gt; returns every product when no filters are given, defaulting page/pageSize</td>
+        <td class="dur">0 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>getProducts &gt; filters by section</td>
+        <td class="dur">0 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>getProducts &gt; filters by category</td>
+        <td class="dur">0 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>getProducts &gt; searches by name, case-insensitively</td>
+        <td class="dur">0 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>getProducts &gt; returns an empty page for a search with no matches</td>
+        <td class="dur">0 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>getProducts &gt; finds related products in the same category, excluding itself</td>
+        <td class="dur">1 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>getProducts &gt; returns an empty result for an unknown relatedTo id</td>
+        <td class="dur">1 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>getProducts &gt; paginates: page 2 returns a disjoint set from page 1</td>
+        <td class="dur">1 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>getProducts &gt; clamps an oversized pageSize to 100</td>
+        <td class="dur">2 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>getProducts &gt; falls back to page 1 for a non-positive page</td>
+        <td class="dur">0 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>lib/format.test.ts</code>
+      <span class="count">6 tests</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>ratingToStars &gt; returns undefined when there is no rating</td>
+        <td class="dur">1 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>ratingToStars &gt; renders 0 as all empty stars</td>
+        <td class="dur">0 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>ratingToStars &gt; renders a whole number rating</td>
+        <td class="dur">0 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>ratingToStars &gt; rounds a fractional rating up at .5 and above</td>
+        <td class="dur">0 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>ratingToStars &gt; rounds a fractional rating down below .5</td>
+        <td class="dur">0 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>ratingToStars &gt; clamps a perfect score to 5 filled stars</td>
+        <td class="dur">0 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>app/api/banners/route.test.ts</code>
+      <span class="count">1 test</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>GET /api/banners &gt; returns the seeded hero banners as JSON</td>
+        <td class="dur">3 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>app/api/brands/route.test.ts</code>
+      <span class="count">1 test</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>GET /api/brands &gt; returns the seeded brand promo tiles as JSON</td>
+        <td class="dur">4 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>app/api/hello/route.test.ts</code>
+      <span class="count">1 test</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>GET /api/hello &gt; returns a hello-world payload</td>
+        <td class="dur">2 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>app/api/products/route.test.ts</code>
+      <span class="count">6 tests</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>GET /api/products &gt; lists products for a valid section</td>
+        <td class="dur">10 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>GET /api/products &gt; rejects an invalid section with 400</td>
+        <td class="dur">1 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>GET /api/products &gt; searches by keyword</td>
+        <td class="dur">1 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>GET /api/products &gt; supports pagination via page/pageSize</td>
+        <td class="dur">1 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>GET /api/products &gt; resolves related products by category, excluding the given id</td>
+        <td class="dur">1 ms</td>
+      </tr>
+      
+      <tr class="ok">
+        <td>✅</td>
+        <td>GET /api/products &gt; returns an empty list for an unknown relatedTo id</td>
+        <td class="dur">0 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details class="file-card" >
+    <summary>
+      <span class="badge badge-ok">passed</span>
+      <code>app/api/categories/route.test.ts</code>
+      <span class="count">1 test</span>
+    </summary>
+    <table>
+      <tbody>
+      <tr class="ok">
+        <td>✅</td>
+        <td>GET /api/categories &gt; returns the seeded categories as JSON</td>
+        <td class="dur">3 ms</td>
+      </tr>
+      </tbody>
+    </table>
+  </details>
+  </section>
+</main>
+</body>
+</html>

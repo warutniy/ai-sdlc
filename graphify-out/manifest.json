@@ -1,0 +1,800 @@
+{
+  ".agents/skills/caveman-compress/scripts/__init__.py": {
+    "mtime": 1789380143.041757,
+    "seen": 1789382512.3300102,
+    "ast_hash": "4bfea67395a7ba04f363df51355d1ef8",
+    "semantic_hash": "4bfea67395a7ba04f363df51355d1ef8"
+  },
+  ".agents/skills/caveman-compress/scripts/__main__.py": {
+    "mtime": 1789380143.0417614,
+    "seen": 1789382512.330013,
+    "ast_hash": "746aff14c3a098a28fe9d01d54f174a9",
+    "semantic_hash": "746aff14c3a098a28fe9d01d54f174a9"
+  },
+  ".agents/skills/caveman-compress/scripts/benchmark.py": {
+    "mtime": 1789380143.0419402,
+    "seen": 1789382512.330014,
+    "ast_hash": "a84586774a335e7dd894f45f5fc2aaf5",
+    "semantic_hash": "a84586774a335e7dd894f45f5fc2aaf5"
+  },
+  ".agents/skills/caveman-compress/scripts/cli.py": {
+    "mtime": 1789380143.041847,
+    "seen": 1789382512.330014,
+    "ast_hash": "993604200cad4bb12bdb2efcdb45fcf5",
+    "semantic_hash": "993604200cad4bb12bdb2efcdb45fcf5"
+  },
+  ".agents/skills/caveman-compress/scripts/compress.py": {
+    "mtime": 1789380143.0420105,
+    "seen": 1789382512.330015,
+    "ast_hash": "e26f07d9d279a8e2f720690cf4c436a6",
+    "semantic_hash": "e26f07d9d279a8e2f720690cf4c436a6"
+  },
+  ".agents/skills/caveman-compress/scripts/detect.py": {
+    "mtime": 1789380143.0418034,
+    "seen": 1789382512.330015,
+    "ast_hash": "c21187cf75dd074c140edd4afeade324",
+    "semantic_hash": "c21187cf75dd074c140edd4afeade324"
+  },
+  ".agents/skills/caveman-compress/scripts/validate.py": {
+    "mtime": 1789380143.0419507,
+    "seen": 1789382512.330016,
+    "ast_hash": "429d344b38c853b2814dc80a6c47f70c",
+    "semantic_hash": "429d344b38c853b2814dc80a6c47f70c"
+  },
+  ".agents/skills/caveman-explore/package.json": {
+    "mtime": 1789380143.0663745,
+    "seen": 1789382512.330016,
+    "ast_hash": "79f12a1d584823a99bc09a2ad4e02fe8",
+    "semantic_hash": "79f12a1d584823a99bc09a2ad4e02fe8"
+  },
+  ".agents/skills/caveman-explore/tests/skill-file.test.mjs": {
+    "mtime": 1789380143.0664248,
+    "seen": 1789382512.330017,
+    "ast_hash": "6915626578a39000dde6502615741ac8",
+    "semantic_hash": "6915626578a39000dde6502615741ac8"
+  },
+  ".agents/skills/caveman-learn/package.json": {
+    "mtime": 1789380143.088968,
+    "seen": 1789382512.330017,
+    "ast_hash": "86afddb0e3eb113395e9b69cfbff069e",
+    "semantic_hash": "86afddb0e3eb113395e9b69cfbff069e"
+  },
+  ".agents/skills/caveman-learn/tests/index.js": {
+    "mtime": 1789380143.0892804,
+    "seen": 1789382512.330017,
+    "ast_hash": "4989b939dbebf136dbbe6cce47bb1287",
+    "semantic_hash": "4989b939dbebf136dbbe6cce47bb1287"
+  },
+  ".agents/skills/caveman-learn/tests/skill-file.test.mjs": {
+    "mtime": 1789380143.089283,
+    "seen": 1789382512.330018,
+    "ast_hash": "688b94f0ccc44fd3e265998e7f669f7d",
+    "semantic_hash": "688b94f0ccc44fd3e265998e7f669f7d"
+  },
+  ".claude/hooks/block-dangerous-bash.sh": {
+    "mtime": 1789378855.645123,
+    "seen": 1789382512.330018,
+    "ast_hash": "c51b838fd84c38331588562927a765c5",
+    "semantic_hash": "c51b838fd84c38331588562927a765c5"
+  },
+  ".claude/settings.json": {
+    "mtime": 1789381734.11286,
+    "seen": 1789382512.330019,
+    "ast_hash": "e8c319940f98b6dc667afe575b85ff58",
+    "semantic_hash": "e8c319940f98b6dc667afe575b85ff58"
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1789380399.4087713,
+    "seen": 1789382512.330019,
+    "ast_hash": "b3cdfa464938b0fcfabcfd3112cd512f",
+    "semantic_hash": "b3cdfa464938b0fcfabcfd3112cd512f"
+  },
+  ".storybook/main.ts": {
+    "mtime": 1789320038.9610448,
+    "seen": 1789382512.3300202,
+    "ast_hash": "58bff9a935367b997fac5853cb7a4345",
+    "semantic_hash": "58bff9a935367b997fac5853cb7a4345"
+  },
+  ".storybook/preview.tsx": {
+    "mtime": 1789320214.235138,
+    "seen": 1789382512.3300202,
+    "ast_hash": "993adeca00ca789c093a663e5c163bfc",
+    "semantic_hash": "993adeca00ca789c093a663e5c163bfc"
+  },
+  "app/HomeContent.tsx": {
+    "mtime": 1789368617.9137895,
+    "seen": 1789382512.3300202,
+    "ast_hash": "8d4ea9db045d4cfaa773b4d2f357f3a0",
+    "semantic_hash": "8d4ea9db045d4cfaa773b4d2f357f3a0"
+  },
+  "app/api/banners/route.test.ts": {
+    "mtime": 1789369431.753195,
+    "seen": 1789382512.3300211,
+    "ast_hash": "b4e9919344a41c4c3fdbdedbbe723cf8",
+    "semantic_hash": "b4e9919344a41c4c3fdbdedbbe723cf8"
+  },
+  "app/api/banners/route.ts": {
+    "mtime": 1789362982.8049111,
+    "seen": 1789382512.3300211,
+    "ast_hash": "8aa9636e1c182c1e59ce873ce9787d08",
+    "semantic_hash": "8aa9636e1c182c1e59ce873ce9787d08"
+  },
+  "app/api/brands/route.test.ts": {
+    "mtime": 1789369434.8466325,
+    "seen": 1789382512.3300211,
+    "ast_hash": "e9b3d01a0f8b27d06bb28b07c6fcbff0",
+    "semantic_hash": "e9b3d01a0f8b27d06bb28b07c6fcbff0"
+  },
+  "app/api/brands/route.ts": {
+    "mtime": 1789362983.7012448,
+    "seen": 1789382512.3300219,
+    "ast_hash": "0229669b63b4012127a63de5b61004a3",
+    "semantic_hash": "0229669b63b4012127a63de5b61004a3"
+  },
+  "app/api/categories/route.test.ts": {
+    "mtime": 1789369428.0024955,
+    "seen": 1789382512.3300219,
+    "ast_hash": "01e8aa61433e94d3e19691b7f4877ebd",
+    "semantic_hash": "01e8aa61433e94d3e19691b7f4877ebd"
+  },
+  "app/api/categories/route.ts": {
+    "mtime": 1789362981.5577636,
+    "seen": 1789382512.3300228,
+    "ast_hash": "acdf4412d867cfb7f796955da79e0f7a",
+    "semantic_hash": "acdf4412d867cfb7f796955da79e0f7a"
+  },
+  "app/api/hello/route.test.ts": {
+    "mtime": 1789369424.6555312,
+    "seen": 1789382512.3300228,
+    "ast_hash": "e6bdf2cecb338d478127c450d7f18b68",
+    "semantic_hash": "e6bdf2cecb338d478127c450d7f18b68"
+  },
+  "app/api/hello/route.ts": {
+    "mtime": 1789362343.564653,
+    "seen": 1789382512.3300228,
+    "ast_hash": "9a59be97c08d14295d2195a2140060b2",
+    "semantic_hash": "9a59be97c08d14295d2195a2140060b2"
+  },
+  "app/api/products/route.test.ts": {
+    "mtime": 1789369442.7068424,
+    "seen": 1789382512.330024,
+    "ast_hash": "437eb43f53ca4f3864e4ab0406b66ec4",
+    "semantic_hash": "437eb43f53ca4f3864e4ab0406b66ec4"
+  },
+  "app/api/products/route.ts": {
+    "mtime": 1789362989.1098716,
+    "seen": 1789382512.330024,
+    "ast_hash": "61d82fa91fd09581574595d26f95fe1f",
+    "semantic_hash": "61d82fa91fd09581574595d26f95fe1f"
+  },
+  "app/design/page.tsx": {
+    "mtime": 1789320493.4118788,
+    "seen": 1789382512.330025,
+    "ast_hash": "fd02d602ca800ea69217243044adbf36",
+    "semantic_hash": "fd02d602ca800ea69217243044adbf36"
+  },
+  "app/docs/SwaggerDocs.tsx": {
+    "mtime": 1789362651.912077,
+    "seen": 1789382512.330025,
+    "ast_hash": "0c58855f69fbf775c9b7c8d222815d0b",
+    "semantic_hash": "0c58855f69fbf775c9b7c8d222815d0b"
+  },
+  "app/docs/page.tsx": {
+    "mtime": 1789362654.294558,
+    "seen": 1789382512.330025,
+    "ast_hash": "a6fc80f58c05c740f72088de19e94a18",
+    "semantic_hash": "a6fc80f58c05c740f72088de19e94a18"
+  },
+  "app/layout.tsx": {
+    "mtime": 1789317668.0955148,
+    "seen": 1789382512.330026,
+    "ast_hash": "fed7c4d6cbbb93b7827ccc493f8df6fc",
+    "semantic_hash": "fed7c4d6cbbb93b7827ccc493f8df6fc"
+  },
+  "app/page.tsx": {
+    "mtime": 1789368620.4041562,
+    "seen": 1789382512.330026,
+    "ast_hash": "0ac15ecb18bd37d85f61408c2bd7f1c9",
+    "semantic_hash": "0ac15ecb18bd37d85f61408c2bd7f1c9"
+  },
+  "app/product/page.tsx": {
+    "mtime": 1789320851.9993684,
+    "seen": 1789382512.330027,
+    "ast_hash": "3d973eca0c19cfd9160f6eae436892f1",
+    "semantic_hash": "3d973eca0c19cfd9160f6eae436892f1"
+  },
+  "components/farmart/Badge.stories.tsx": {
+    "mtime": 1789320015.72635,
+    "seen": 1789382512.330027,
+    "ast_hash": "5c36f850a83aba502f0ecdbe928cb1dd",
+    "semantic_hash": "5c36f850a83aba502f0ecdbe928cb1dd"
+  },
+  "components/farmart/Badge.tsx": {
+    "mtime": 1789319974.0482967,
+    "seen": 1789382512.330027,
+    "ast_hash": "115a48ba407318374529db0af93fce54",
+    "semantic_hash": "115a48ba407318374529db0af93fce54"
+  },
+  "components/farmart/Banner.stories.tsx": {
+    "mtime": 1789320029.0775254,
+    "seen": 1789382512.330028,
+    "ast_hash": "49bb3bacd00a759dad59019622d8742c",
+    "semantic_hash": "49bb3bacd00a759dad59019622d8742c"
+  },
+  "components/farmart/Banner.tsx": {
+    "mtime": 1789319993.2838411,
+    "seen": 1789382512.330028,
+    "ast_hash": "d7cce0d7f9e403064ee06655688c19d9",
+    "semantic_hash": "d7cce0d7f9e403064ee06655688c19d9"
+  },
+  "components/farmart/Breadcrumb.stories.tsx": {
+    "mtime": 1789320929.0122812,
+    "seen": 1789382512.330028,
+    "ast_hash": "3edbcd36d1004cc977605a4b165df119",
+    "semantic_hash": "3edbcd36d1004cc977605a4b165df119"
+  },
+  "components/farmart/Breadcrumb.tsx": {
+    "mtime": 1789320765.407743,
+    "seen": 1789382512.330029,
+    "ast_hash": "644a89e9a756dfa271c686d91b8a6f40",
+    "semantic_hash": "644a89e9a756dfa271c686d91b8a6f40"
+  },
+  "components/farmart/Button.stories.tsx": {
+    "mtime": 1789320010.931238,
+    "seen": 1789382512.330029,
+    "ast_hash": "9c29cc610fff19eea80c11efe4c16e53",
+    "semantic_hash": "9c29cc610fff19eea80c11efe4c16e53"
+  },
+  "components/farmart/Button.tsx": {
+    "mtime": 1789319969.5600324,
+    "seen": 1789382512.33003,
+    "ast_hash": "ee4a0c5fc5f2bcd407f88baaea3b4e12",
+    "semantic_hash": "ee4a0c5fc5f2bcd407f88baaea3b4e12"
+  },
+  "components/farmart/CategoryTile.stories.tsx": {
+    "mtime": 1789320019.4271407,
+    "seen": 1789382512.33003,
+    "ast_hash": "72388c15d39bc5ce3bfaebab5d0f4939",
+    "semantic_hash": "72388c15d39bc5ce3bfaebab5d0f4939"
+  },
+  "components/farmart/CategoryTile.tsx": {
+    "mtime": 1789319977.8052557,
+    "seen": 1789382512.33003,
+    "ast_hash": "23200e98504e8f4f5a0acdf44d579798",
+    "semantic_hash": "23200e98504e8f4f5a0acdf44d579798"
+  },
+  "components/farmart/Dialog.stories.tsx": {
+    "mtime": 1789320508.210347,
+    "seen": 1789382512.3300312,
+    "ast_hash": "04bee7aa0261600e717f547523efac8b",
+    "semantic_hash": "04bee7aa0261600e717f547523efac8b"
+  },
+  "components/farmart/Dialog.tsx": {
+    "mtime": 1789320450.4988792,
+    "seen": 1789382512.3300312,
+    "ast_hash": "a6899638666337547eadba9a93e21a40",
+    "semantic_hash": "a6899638666337547eadba9a93e21a40"
+  },
+  "components/farmart/DialogDemo.tsx": {
+    "mtime": 1789320455.3063657,
+    "seen": 1789382512.330032,
+    "ast_hash": "52007820f904eb343be2c96bca739b31",
+    "semantic_hash": "52007820f904eb343be2c96bca739b31"
+  },
+  "components/farmart/ImageGallery.stories.tsx": {
+    "mtime": 1789320932.674865,
+    "seen": 1789382512.330032,
+    "ast_hash": "2141a878592b6360cb020bbc9c42a1a2",
+    "semantic_hash": "2141a878592b6360cb020bbc9c42a1a2"
+  },
+  "components/farmart/ImageGallery.tsx": {
+    "mtime": 1789320771.3926182,
+    "seen": 1789382512.330032,
+    "ast_hash": "60e7f97395ef64e49509c094dc75abd8",
+    "semantic_hash": "60e7f97395ef64e49509c094dc75abd8"
+  },
+  "components/farmart/ProductCard.stories.tsx": {
+    "mtime": 1789320024.3373618,
+    "seen": 1789382512.3300328,
+    "ast_hash": "9a71eb9da941ae1e060b57a4b9b89526",
+    "semantic_hash": "9a71eb9da941ae1e060b57a4b9b89526"
+  },
+  "components/farmart/ProductCard.tsx": {
+    "mtime": 1789320806.3861043,
+    "seen": 1789382512.3300328,
+    "ast_hash": "e1b05171461a786259bc488eea48beb7",
+    "semantic_hash": "e1b05171461a786259bc488eea48beb7"
+  },
+  "components/farmart/ProductTabs.stories.tsx": {
+    "mtime": 1789320937.1105654,
+    "seen": 1789382512.330034,
+    "ast_hash": "68fff052fc10ba1d4d9d6a10765357e9",
+    "semantic_hash": "68fff052fc10ba1d4d9d6a10765357e9"
+  },
+  "components/farmart/ProductTabs.tsx": {
+    "mtime": 1789320777.994487,
+    "seen": 1789382512.330034,
+    "ast_hash": "87a46530e95e1120aaf27ad348fc8d54",
+    "semantic_hash": "87a46530e95e1120aaf27ad348fc8d54"
+  },
+  "components/farmart/QuantityStepper.stories.tsx": {
+    "mtime": 1789320924.5203018,
+    "seen": 1789382512.330034,
+    "ast_hash": "affe42c81f916e4c56282aff1065e392",
+    "semantic_hash": "affe42c81f916e4c56282aff1065e392"
+  },
+  "components/farmart/QuantityStepper.tsx": {
+    "mtime": 1789320921.194391,
+    "seen": 1789382512.330035,
+    "ast_hash": "95736dd7455db89481c550a013c2885e",
+    "semantic_hash": "95736dd7455db89481c550a013c2885e"
+  },
+  "components/farmart/Rating.stories.tsx": {
+    "mtime": 1789320903.3444655,
+    "seen": 1789382512.330035,
+    "ast_hash": "e55631504f743a672cea6f72baa379fe",
+    "semantic_hash": "e55631504f743a672cea6f72baa379fe"
+  },
+  "components/farmart/Rating.tsx": {
+    "mtime": 1789320753.9348254,
+    "seen": 1789382512.330035,
+    "ast_hash": "58fa785e30db898631e93beb6e4dd7b0",
+    "semantic_hash": "58fa785e30db898631e93beb6e4dd7b0"
+  },
+  "components/farmart/SearchBox.tsx": {
+    "mtime": 1789363006.0570493,
+    "seen": 1789382512.330036,
+    "ast_hash": "597b3cf24590b4bf51db34adbf09fe91",
+    "semantic_hash": "597b3cf24590b4bf51db34adbf09fe91"
+  },
+  "components/farmart/SignupPanel.stories.tsx": {
+    "mtime": 1789320032.300271,
+    "seen": 1789382512.330036,
+    "ast_hash": "7e126f5989593e389471577e8495ab34",
+    "semantic_hash": "7e126f5989593e389471577e8495ab34"
+  },
+  "components/farmart/SignupPanel.tsx": {
+    "mtime": 1789320089.541765,
+    "seen": 1789382512.3300369,
+    "ast_hash": "a1b5394ebdeece48e1b2c7df9825e54c",
+    "semantic_hash": "a1b5394ebdeece48e1b2c7df9825e54c"
+  },
+  "components/farmart/SiteHeader.stories.tsx": {
+    "mtime": 1789320940.6092901,
+    "seen": 1789382512.3300369,
+    "ast_hash": "b3fba7485524778e1c84858f21e0f389",
+    "semantic_hash": "b3fba7485524778e1c84858f21e0f389"
+  },
+  "components/farmart/SiteHeader.tsx": {
+    "mtime": 1789363012.830074,
+    "seen": 1789382512.330038,
+    "ast_hash": "f228d20ef4e34ee5482400f5340b04ab",
+    "semantic_hash": "f228d20ef4e34ee5482400f5340b04ab"
+  },
+  "components/farmart/Tabs.stories.tsx": {
+    "mtime": 1789320035.6053677,
+    "seen": 1789382512.330038,
+    "ast_hash": "4ff2c1d01b48e67985d7e6cd9125ac13",
+    "semantic_hash": "4ff2c1d01b48e67985d7e6cd9125ac13"
+  },
+  "components/farmart/Tabs.tsx": {
+    "mtime": 1789320003.0790775,
+    "seen": 1789382512.330038,
+    "ast_hash": "de0257d7d194c7d8acff5e2a8736e322",
+    "semantic_hash": "de0257d7d194c7d8acff5e2a8736e322"
+  },
+  "components/farmart/index.ts": {
+    "mtime": 1789363015.392635,
+    "seen": 1789382512.330039,
+    "ast_hash": "58eea0c2035ff379fad7846b27af21e9",
+    "semantic_hash": "58eea0c2035ff379fad7846b27af21e9"
+  },
+  "eslint.config.mjs": {
+    "mtime": 1789319466.8153553,
+    "seen": 1789382512.330039,
+    "ast_hash": "3cf4dac4436b10b4f77d40853008a568",
+    "semantic_hash": "3cf4dac4436b10b4f77d40853008a568"
+  },
+  "lib/db.ts": {
+    "mtime": 1789370924.8972716,
+    "seen": 1789382512.330039,
+    "ast_hash": "7a0c871960384e94b65554b0fa603e71",
+    "semantic_hash": "7a0c871960384e94b65554b0fa603e71"
+  },
+  "lib/farmart-data.test.ts": {
+    "mtime": 1789369419.9126139,
+    "seen": 1789382512.33004,
+    "ast_hash": "e716f9c2fba3519105e19706ef9204c3",
+    "semantic_hash": "e716f9c2fba3519105e19706ef9204c3"
+  },
+  "lib/farmart-data.ts": {
+    "mtime": 1789362979.0662959,
+    "seen": 1789382512.33004,
+    "ast_hash": "5e9d889d342e0b59d220dd327d857aa8",
+    "semantic_hash": "5e9d889d342e0b59d220dd327d857aa8"
+  },
+  "lib/format.test.ts": {
+    "mtime": 1789369405.9430711,
+    "seen": 1789382512.3300412,
+    "ast_hash": "38c37c762b4828433120809733a876af",
+    "semantic_hash": "38c37c762b4828433120809733a876af"
+  },
+  "lib/format.ts": {
+    "mtime": 1789362992.184637,
+    "seen": 1789382512.3300412,
+    "ast_hash": "0905ac911092d82d30c1de93620fa88b",
+    "semantic_hash": "0905ac911092d82d30c1de93620fa88b"
+  },
+  "next.config.ts": {
+    "mtime": 1789316673.0030365,
+    "seen": 1789382512.3300412,
+    "ast_hash": "9b77af189a21a7a64e4bd7a426f64176",
+    "semantic_hash": "9b77af189a21a7a64e4bd7a426f64176"
+  },
+  "package.json": {
+    "mtime": 1789369761.062124,
+    "seen": 1789382512.3300421,
+    "ast_hash": "63ab169f4e7340ae5781f7df40a29a3c",
+    "semantic_hash": "63ab169f4e7340ae5781f7df40a29a3c"
+  },
+  "postcss.config.mjs": {
+    "mtime": 1789316665.1585016,
+    "seen": 1789382512.3300421,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "public/openapi.json": {
+    "mtime": 1789369176.6040106,
+    "seen": 1789382512.3300421,
+    "ast_hash": "fd1ea30fca7a1b97cc136363605684c5",
+    "semantic_hash": "fd1ea30fca7a1b97cc136363605684c5"
+  },
+  "scripts/generate-test-report.mjs": {
+    "mtime": 1789369923.006262,
+    "seen": 1789382512.3300428,
+    "ast_hash": "565395bd170fffcd3699333c8e28ac9e",
+    "semantic_hash": "565395bd170fffcd3699333c8e28ac9e"
+  },
+  "skills-lock.json": {
+    "mtime": 1789380143.2104714,
+    "seen": 1789382512.3300428,
+    "ast_hash": "3e04085c1eafd5ce2c6cf21de5df7aa2",
+    "semantic_hash": "3e04085c1eafd5ce2c6cf21de5df7aa2"
+  },
+  "tsconfig.json": {
+    "mtime": 1789316673.0021176,
+    "seen": 1789382512.3300438,
+    "ast_hash": "02fc19ad21338c2ab820a70136310db4",
+    "semantic_hash": "02fc19ad21338c2ab820a70136310db4"
+  },
+  "types/node-sqlite.d.ts": {
+    "mtime": 1789362929.5919602,
+    "seen": 1789382512.3300438,
+    "ast_hash": "d0788d77e2f372608d17885b3911e2fc",
+    "semantic_hash": "d0788d77e2f372608d17885b3911e2fc"
+  },
+  "vitest.config.ts": {
+    "mtime": 1789369399.6886675,
+    "seen": 1789382512.3300438,
+    "ast_hash": "de2f1b1a923a5fea17026dc238530b01",
+    "semantic_hash": "de2f1b1a923a5fea17026dc238530b01"
+  },
+  "vitest.shims.d.ts": {
+    "mtime": 1789319535.1886332,
+    "seen": 1789382512.330045,
+    "ast_hash": "4d243f7dd03a2a82af1fde8db0b92025",
+    "semantic_hash": "4d243f7dd03a2a82af1fde8db0b92025"
+  },
+  ".agents/skills/cavecrew/README.md": {
+    "mtime": 1789380142.9986255,
+    "seen": 1789382512.330045,
+    "ast_hash": "14eec7b6e3c9020b6302be4763dcf5fa",
+    "semantic_hash": "14eec7b6e3c9020b6302be4763dcf5fa"
+  },
+  ".agents/skills/cavecrew/SKILL.md": {
+    "mtime": 1789380142.9986238,
+    "seen": 1789382512.330046,
+    "ast_hash": "7b0524cced09e47fc41e8367b9364c8d",
+    "semantic_hash": "7b0524cced09e47fc41e8367b9364c8d"
+  },
+  ".agents/skills/caveman-commit/README.md": {
+    "mtime": 1789380143.0192432,
+    "seen": 1789382512.330046,
+    "ast_hash": "15f57347c5b5449b79fdf24fdab21f31",
+    "semantic_hash": "15f57347c5b5449b79fdf24fdab21f31"
+  },
+  ".agents/skills/caveman-commit/SKILL.md": {
+    "mtime": 1789380143.0192442,
+    "seen": 1789382512.330046,
+    "ast_hash": "7461e17437fcf7629b431e94a7036afb",
+    "semantic_hash": "7461e17437fcf7629b431e94a7036afb"
+  },
+  ".agents/skills/caveman-compress/README.md": {
+    "mtime": 1789380143.0415537,
+    "seen": 1789382512.330047,
+    "ast_hash": "3f3b083d32e5986fa91cdb775532f5e9",
+    "semantic_hash": "3f3b083d32e5986fa91cdb775532f5e9"
+  },
+  ".agents/skills/caveman-compress/SECURITY.md": {
+    "mtime": 1789380143.0414698,
+    "seen": 1789382512.330047,
+    "ast_hash": "debca8209e185a1fa93455e51c43dd5d",
+    "semantic_hash": "debca8209e185a1fa93455e51c43dd5d"
+  },
+  ".agents/skills/caveman-compress/SKILL.md": {
+    "mtime": 1789380143.041589,
+    "seen": 1789382512.330048,
+    "ast_hash": "ef5cf1bf6ae62602127088e6a39cce2c",
+    "semantic_hash": "ef5cf1bf6ae62602127088e6a39cce2c"
+  },
+  ".agents/skills/caveman-discover/SKILL.md": {
+    "mtime": 1789380143.048794,
+    "seen": 1789382512.330048,
+    "ast_hash": "5490c760e05475ff8001be25790fcfd0",
+    "semantic_hash": "5490c760e05475ff8001be25790fcfd0"
+  },
+  ".agents/skills/caveman-evidence-review/SKILL.md": {
+    "mtime": 1789380143.055345,
+    "seen": 1789382512.330049,
+    "ast_hash": "049aabcf5cdf61c662fddcca03d57ee1",
+    "semantic_hash": "049aabcf5cdf61c662fddcca03d57ee1"
+  },
+  ".agents/skills/caveman-explore/SKILL.md": {
+    "mtime": 1789380143.0663767,
+    "seen": 1789382512.330049,
+    "ast_hash": "2bbe36089903d51ed1816bd300eabcd1",
+    "semantic_hash": "2bbe36089903d51ed1816bd300eabcd1"
+  },
+  ".agents/skills/caveman-help/README.md": {
+    "mtime": 1789380143.0740585,
+    "seen": 1789382512.330049,
+    "ast_hash": "9c9cf8de78df2a8831c57d6bc88d942b",
+    "semantic_hash": "9c9cf8de78df2a8831c57d6bc88d942b"
+  },
+  ".agents/skills/caveman-help/SKILL.md": {
+    "mtime": 1789380143.0740712,
+    "seen": 1789382512.33005,
+    "ast_hash": "035329fd68307c8aa605b35205ee7972",
+    "semantic_hash": "035329fd68307c8aa605b35205ee7972"
+  },
+  ".agents/skills/caveman-learn/CLAUDE.md": {
+    "mtime": 1789380143.0889342,
+    "seen": 1789382512.33005,
+    "ast_hash": "cc1c04bfbd0bb7deb0c726ae3f5f64c0",
+    "semantic_hash": "cc1c04bfbd0bb7deb0c726ae3f5f64c0"
+  },
+  ".agents/skills/caveman-learn/README.md": {
+    "mtime": 1789380143.088967,
+    "seen": 1789382512.33005,
+    "ast_hash": "4cace7cdbb76af886cd0cf244c52f2cc",
+    "semantic_hash": "4cace7cdbb76af886cd0cf244c52f2cc"
+  },
+  ".agents/skills/caveman-learn/SKILL.md": {
+    "mtime": 1789380143.0890257,
+    "seen": 1789382512.3300512,
+    "ast_hash": "bf45712b8e309e4f995c68fc1ac844a2",
+    "semantic_hash": "bf45712b8e309e4f995c68fc1ac844a2"
+  },
+  ".agents/skills/caveman-manage/SKILL.md": {
+    "mtime": 1789380143.0955524,
+    "seen": 1789382512.3300512,
+    "ast_hash": "8a835ec743e96d833a85be5c153bba82",
+    "semantic_hash": "8a835ec743e96d833a85be5c153bba82"
+  },
+  ".agents/skills/caveman-optimize/SKILL.md": {
+    "mtime": 1789380143.1022854,
+    "seen": 1789382512.3300521,
+    "ast_hash": "69f2ee5e6d7edf5a9dbd40305e4c3599",
+    "semantic_hash": "69f2ee5e6d7edf5a9dbd40305e4c3599"
+  },
+  ".agents/skills/caveman-review/README.md": {
+    "mtime": 1789380143.109755,
+    "seen": 1789382512.3300521,
+    "ast_hash": "ae3bdc81125037690fc50504e2917c83",
+    "semantic_hash": "ae3bdc81125037690fc50504e2917c83"
+  },
+  ".agents/skills/caveman-review/SKILL.md": {
+    "mtime": 1789380143.1098871,
+    "seen": 1789382512.3300521,
+    "ast_hash": "627809fbc078161cc1f060dd3524f051",
+    "semantic_hash": "627809fbc078161cc1f060dd3524f051"
+  },
+  ".agents/skills/caveman-setup/SKILL.md": {
+    "mtime": 1789380143.1180615,
+    "seen": 1789382512.330053,
+    "ast_hash": "d86a82f6ac1c9306c6f6ee7a7b17b412",
+    "semantic_hash": "d86a82f6ac1c9306c6f6ee7a7b17b412"
+  },
+  ".agents/skills/caveman-stats/README.md": {
+    "mtime": 1789380143.138397,
+    "seen": 1789382512.330053,
+    "ast_hash": "c2f26cde34791836bea794ff5e0dbaa4",
+    "semantic_hash": "c2f26cde34791836bea794ff5e0dbaa4"
+  },
+  ".agents/skills/caveman-stats/SKILL.md": {
+    "mtime": 1789380143.138248,
+    "seen": 1789382512.3300538,
+    "ast_hash": "a2cc6f39dfbf6d794cd59affe581e85e",
+    "semantic_hash": "a2cc6f39dfbf6d794cd59affe581e85e"
+  },
+  ".agents/skills/caveman/README.md": {
+    "mtime": 1789380143.0099902,
+    "seen": 1789382512.3300538,
+    "ast_hash": "14801a83830df3284b11a2752da83a39",
+    "semantic_hash": "14801a83830df3284b11a2752da83a39"
+  },
+  ".agents/skills/caveman/SKILL.md": {
+    "mtime": 1789380143.0099895,
+    "seen": 1789382512.3300538,
+    "ast_hash": "38e8d1a0788697d909a374680361ba9a",
+    "semantic_hash": "38e8d1a0788697d909a374680361ba9a"
+  },
+  ".agents/skills/investigate-first/SKILL.md": {
+    "mtime": 1789380143.1560926,
+    "seen": 1789382512.330055,
+    "ast_hash": "521931896078b281b65861c28cee19e6",
+    "semantic_hash": "521931896078b281b65861c28cee19e6"
+  },
+  ".agents/skills/investigate-first/agents/openai.yaml": {
+    "mtime": 1789380143.1561508,
+    "seen": 1789382512.330055,
+    "ast_hash": "2e40d635059c35d5e15efdac38ae5e75",
+    "semantic_hash": "2e40d635059c35d5e15efdac38ae5e75"
+  },
+  ".agents/skills/lean-build/SKILL.md": {
+    "mtime": 1789380143.1655283,
+    "seen": 1789382512.330056,
+    "ast_hash": "dc89b03c34bd2bcae8b0e4d6ab3bd982",
+    "semantic_hash": "dc89b03c34bd2bcae8b0e4d6ab3bd982"
+  },
+  ".agents/skills/lean-build/agents/openai.yaml": {
+    "mtime": 1789380143.1656027,
+    "seen": 1789382512.330056,
+    "ast_hash": "aa929ee1d741fc29c8e743110a081f38",
+    "semantic_hash": "aa929ee1d741fc29c8e743110a081f38"
+  },
+  ".agents/skills/migration/SKILL.md": {
+    "mtime": 1789380143.1755924,
+    "seen": 1789382512.330056,
+    "ast_hash": "aa0ffea732f9e5e900dbf7929a6da704",
+    "semantic_hash": "aa0ffea732f9e5e900dbf7929a6da704"
+  },
+  ".agents/skills/migration/agents/openai.yaml": {
+    "mtime": 1789380143.175672,
+    "seen": 1789382512.330057,
+    "ast_hash": "3f9eea1166d8e521f431614d458ae06b",
+    "semantic_hash": "3f9eea1166d8e521f431614d458ae06b"
+  },
+  ".agents/skills/safe-refactor/SKILL.md": {
+    "mtime": 1789380143.1846554,
+    "seen": 1789382512.330057,
+    "ast_hash": "1695e48c4cba2ccbbbb4f5703f8964cd",
+    "semantic_hash": "1695e48c4cba2ccbbbb4f5703f8964cd"
+  },
+  ".agents/skills/safe-refactor/agents/openai.yaml": {
+    "mtime": 1789380143.1847541,
+    "seen": 1789382512.330057,
+    "ast_hash": "ef7571ec17e45892f66acf5cf3820344",
+    "semantic_hash": "ef7571ec17e45892f66acf5cf3820344"
+  },
+  ".agents/skills/surgical-patch/SKILL.md": {
+    "mtime": 1789380143.1939805,
+    "seen": 1789382512.330058,
+    "ast_hash": "47e717800975837013361bde6707c598",
+    "semantic_hash": "47e717800975837013361bde6707c598"
+  },
+  ".agents/skills/surgical-patch/agents/openai.yaml": {
+    "mtime": 1789380143.1940446,
+    "seen": 1789382512.330058,
+    "ast_hash": "59a79fa5b6bcae061f2922d81a0b1016",
+    "semantic_hash": "59a79fa5b6bcae061f2922d81a0b1016"
+  },
+  ".agents/skills/verify-and-stop/SKILL.md": {
+    "mtime": 1789380143.2026508,
+    "seen": 1789382512.330059,
+    "ast_hash": "31d8303e3b11303f3aa38c7105765736",
+    "semantic_hash": "31d8303e3b11303f3aa38c7105765736"
+  },
+  ".agents/skills/verify-and-stop/agents/openai.yaml": {
+    "mtime": 1789380143.2027302,
+    "seen": 1789382512.330059,
+    "ast_hash": "0fcf3d3b783820fdd064244e95912b15",
+    "semantic_hash": "0fcf3d3b783820fdd064244e95912b15"
+  },
+  ".claude/skills/caveman/README.md": {
+    "mtime": 1789380628.504782,
+    "seen": 1789382512.330059,
+    "ast_hash": "14801a83830df3284b11a2752da83a39",
+    "semantic_hash": "14801a83830df3284b11a2752da83a39"
+  },
+  ".claude/skills/caveman/SKILL.md": {
+    "mtime": 1789380628.5052783,
+    "seen": 1789382512.33006,
+    "ast_hash": "38e8d1a0788697d909a374680361ba9a",
+    "semantic_hash": "38e8d1a0788697d909a374680361ba9a"
+  },
+  ".claude/skills/mikelopster-writer/SKILL.md": {
+    "mtime": 1789360567.8127487,
+    "seen": 1789382512.33006,
+    "ast_hash": "f6f55a5f715aa935a43c479ccd19e04a",
+    "semantic_hash": "f6f55a5f715aa935a43c479ccd19e04a"
+  },
+  ".claude/skills/onboard-seed-data/SKILL.md": {
+    "mtime": 1789370134.3219688,
+    "seen": 1789382512.330061,
+    "ast_hash": "4d1e3c5bd906ea14942c64a6c8976c19",
+    "semantic_hash": "4d1e3c5bd906ea14942c64a6c8976c19"
+  },
+  "AGENTS.md": {
+    "mtime": 1789316673.0023243,
+    "seen": 1789382512.330061,
+    "ast_hash": "01e8142356e15c3404e0d84c48187cd0",
+    "semantic_hash": "01e8142356e15c3404e0d84c48187cd0"
+  },
+  "CLAUDE.md": {
+    "mtime": 1789381734.112118,
+    "seen": 1789382512.330061,
+    "ast_hash": "fb5ca63e3e7e20d0f2b216a800561ffd",
+    "semantic_hash": "fb5ca63e3e7e20d0f2b216a800561ffd"
+  },
+  "DESIGN.md": {
+    "mtime": 1789320890.80066,
+    "seen": 1789382512.3300622,
+    "ast_hash": "c0941d3fcaba57836ae5d655de68e835",
+    "semantic_hash": "c0941d3fcaba57836ae5d655de68e835"
+  },
+  "PLAN.md": {
+    "mtime": 1789154047.1072636,
+    "seen": 1789382512.3300622,
+    "ast_hash": "9fc275fb344a2d422350a6516ce8b440",
+    "semantic_hash": "9fc275fb344a2d422350a6516ce8b440"
+  },
+  "README.md": {
+    "mtime": 1789316672.9988284,
+    "seen": 1789382512.330063,
+    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
+    "semantic_hash": "f15aaa42d5d299d091b1171097ea56ad"
+  },
+  "public/mermaid.html": {
+    "mtime": 1789369224.8001554,
+    "seen": 1789382512.330063,
+    "ast_hash": "4e653b03325682a4144e4f9a2c2a0d4a",
+    "semantic_hash": "4e653b03325682a4144e4f9a2c2a0d4a"
+  },
+  "public/test-report.html": {
+    "mtime": 1789369951.9383874,
+    "seen": 1789382512.330063,
+    "ast_hash": "9619673b7cf2601e9dfdb1953c4078d4",
+    "semantic_hash": "9619673b7cf2601e9dfdb1953c4078d4"
+  },
+  "public/file.svg": {
+    "mtime": 1789316672.9992838,
+    "seen": 1789382512.3300638,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71"
+  },
+  "public/globe.svg": {
+    "mtime": 1789316673.0007007,
+    "seen": 1789382512.3300638,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": "2aaafa6a49b6563925fe440891e32717"
+  },
+  "public/next.svg": {
+    "mtime": 1789316673.0004864,
+    "seen": 1789382512.330065,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": "8e061864f388b47f33a1c3780831193e"
+  },
+  "public/vercel.svg": {
+    "mtime": 1789316673.0001924,
+    "seen": 1789382512.330065,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": "c0af2f507b369b085b35ef4bbe3bcf1e"
+  },
+  "public/window.svg": {
+    "mtime": 1789316673.0009227,
+    "seen": 1789382512.330065,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": "a2760511c65806022ad20adf74370ff3"
+  }
+}
