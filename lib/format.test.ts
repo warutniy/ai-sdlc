@@ -37,4 +37,8 @@ describe("ratingToStars", () => {
   it("clamps a rating below 0 to all empty stars", () => {
     expect(ratingToStars(-5)).toBe("☆☆☆☆☆");
   });
+
+  it("renders a rating with a decimal point", () => {
+    expect(ratingToStars(3.7)).toBe("★★★★☆");
+  });
 });
