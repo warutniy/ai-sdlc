@@ -29,4 +29,8 @@ describe("ratingToStars", () => {
   it("clamps a rating above 5 to 5 filled stars", () => {
     expect(ratingToStars(6)).toBe("★★★★★");
   });
+
+  it("clamps a negative rating to all empty stars", () => {
+    expect(ratingToStars(-1)).toBe("☆☆☆☆☆");
+  });
 });
