@@ -320,7 +320,7 @@ function seed(db: DatabaseSync) {
         emoji: "🍯",
         category: "breads-sweets",
         section: "just-landing",
-        rating: 5,
+        rating: 6,
         reviewCount: 11,
         price: "$9.4",
         oldPrice: null,
