@@ -25,4 +25,8 @@ describe("ratingToStars", () => {
   it("clamps a perfect score to 5 filled stars", () => {
     expect(ratingToStars(5)).toBe("★★★★★");
   });
+
+  it("clamps a rating above 5 to 5 filled stars", () => {
+    expect(ratingToStars(6)).toBe("★★★★★");
+  });
 });
