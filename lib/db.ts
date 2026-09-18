@@ -259,7 +259,7 @@ function seed(db: DatabaseSync) {
         emoji: "🍯",
         category: "breads-sweets",
         section: "best-seller",
-        rating: 5,
+        rating: 6,
         reviewCount: 22,
         price: "$29.9",
         oldPrice: null,
