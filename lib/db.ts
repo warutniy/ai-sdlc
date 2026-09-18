@@ -290,7 +290,7 @@ function seed(db: DatabaseSync) {
         emoji: "🍤",
         category: "frozen-seafoods",
         section: "just-landing",
-        rating: 5,
+        rating: 8,
         reviewCount: 6,
         price: "$11.2",
         oldPrice: null,
