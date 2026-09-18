@@ -6,7 +6,7 @@ import { getDb } from "./db";
  * logic here means both call the same functions against the same SQLite
  * database — the API routes exist for the documented spec / client-side
  * fetches (e.g. search), while Server Components call these directly rather
- * than round-tripping through HTTP to themselves.
+ * than round-tripping through HTTP to themselves. 555
  */
 
 export interface Category {
