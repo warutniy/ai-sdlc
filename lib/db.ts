@@ -335,7 +335,7 @@ function seed(db: DatabaseSync) {
         emoji: "🧊",
         category: "coffees-teas",
         section: "just-landing",
-        rating: 4,
+        rating: 5,
         reviewCount: 7,
         price: "$4.8",
         oldPrice: null,
