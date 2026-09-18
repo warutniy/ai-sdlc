@@ -49,4 +49,12 @@ describe("ratingToStars", () => {
   it("renders a rating with a decimal point that rounds up", () => {
     expect(ratingToStars(1.8)).toBe("★★☆☆☆");
   });
+
+  it("renders a rating with a decimal point that rounds up to 5", () => {
+    expect(ratingToStars(4.9)).toBe("★★★★★");
+  });
+
+  it("renders a rating with a decimal point that rounds down to 0", () => {
+    expect(ratingToStars(0.1)).toBe("☆☆☆☆☆");
+  });
 });
