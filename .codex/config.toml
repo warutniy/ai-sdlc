@@ -1,0 +1,20 @@
+[mcp_servers.notion-project]
+command = "npx"
+args = ["-y", "@notionhq/notion-mcp-server"]
+enabled = true
+env_vars = ["NOTION_TOKEN"]
+
+[mcp_servers.notion-project.tools.API-post-search]
+approval_mode = "approve"
+
+[mcp_servers.notion-project.tools.API-update-page-markdown]
+approval_mode = "approve"
+
+[mcp_servers.notion-project.tools.API-update-a-block]
+approval_mode = "approve"
+
+[mcp_servers.notion-project.tools.API-delete-a-block]
+approval_mode = "approve"
+
+[mcp_servers.notion-project.tools.API-patch-block-children]
+approval_mode = "approve"
