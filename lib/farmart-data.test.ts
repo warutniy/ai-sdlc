@@ -112,4 +112,9 @@ describe("getProducts", () => {
     const result = getProducts({ page: 0 });
     expect(result.page).toBe(1);
   });
+
+  it("falls back to page 1 for a negative page", () => {
+    const result = getProducts({ page: -5 });
+    expect(result.page).toBe(1);
+  });
 });
