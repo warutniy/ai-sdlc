@@ -275,7 +275,7 @@ function seed(db: DatabaseSync) {
         emoji: "🍱",
         category: "fruits-vegetables",
         section: "just-landing",
-        rating: 10,
+        rating: 8,
         reviewCount: 4,
         price: "$14.5",
         oldPrice: null,
