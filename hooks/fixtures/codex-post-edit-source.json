@@ -1,0 +1,10 @@
+{
+  "hook_event_name": "PostToolUse",
+  "tool_name": "apply_patch",
+  "tool_input": {
+    "command": "*** Begin Patch\n*** Update File: lib/format.ts\n@@\n*** End Patch"
+  },
+  "tool_response": {
+    "status": "completed"
+  }
+}
