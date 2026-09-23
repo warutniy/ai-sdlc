@@ -1,5 +1,5 @@
 {
-  "description": "Block destructive shell commands",
+  "description": "Project guardrails and focused quality feedback",
   "hooks": {
     "PreToolUse": [
       {
@@ -10,6 +10,20 @@
             "command": "/usr/bin/python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/guard_tool.py\"",
             "timeout": 10,
             "statusMessage": "Checking shell command"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "^(apply_patch|Edit|Write)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/check_changed_files.py\"",
+            "timeout": 60,
+            "statusMessage": "Checking changed files",
+            "additionalContextLimit": 1200
           }
         ]
       }
