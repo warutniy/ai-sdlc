@@ -1,0 +1,18 @@
+{
+  "description": "Block destructive shell commands",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "^Bash$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/guard_tool.py\"",
+            "timeout": 10,
+            "statusMessage": "Checking shell command"
+          }
+        ]
+      }
+    ]
+  }
+}
