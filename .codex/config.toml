@@ -34,3 +34,12 @@ approval_mode = "approve"
 
 [mcp_servers.notion-project.tools.API-patch-page]
 approval_mode = "approve"
+
+[mcp_servers.notion-project.tools.API-post-page]
+approval_mode = "approve"
+
+[mcp_servers.notion-project.tools.API-query-data-source]
+approval_mode = "approve"
+
+[mcp_servers.notion-project.tools.API-create-a-comment]
+approval_mode = "approve"
