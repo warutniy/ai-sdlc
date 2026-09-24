@@ -277,6 +277,12 @@
       "skillPath": "skills/productivity/teach/SKILL.md",
       "computedHash": "b8a69574c7a019bed84e84313dc8bf02e1d1bf925ba43057d433217c63863206"
     },
+    "technical-writing": {
+      "source": "cursor/plugins",
+      "sourceType": "github",
+      "skillPath": "pstack/skills/technical-writing/SKILL.md",
+      "computedHash": "a513ffa8987ff8528c19a76444de3c3954422c53b2393624976937ca326c52e1"
+    },
     "to-questionnaire": {
       "source": "mattpocock/skills",
       "sourceType": "github",
